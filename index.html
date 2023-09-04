@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEP Tutoring</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="materias.html">Materias</a></li>
+                <li><a href="materias.html">Materias</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Lectura</a></li>
+                        <li><a href="#">Escritura</a></li>
+                        <li><a href="#">Matemáticas</a></li>
+                        <li><a href="#">Ciencias</a></li>
+                        <li><a href="#">Estudio Sociales</a></li>
+                    </ul>
+                </li>
                 <li><a href="g-d-estudios.html">HC HEP - Guías de estudios </a></li>
                 <li><a href="grabaciones.html">Grabaciones</a></li>
                 <li><a href="aplicaciones.html">Aplicaciones</a></li>
@@ -22,6 +31,36 @@
         <section>
             <h2>Pagina de inicio</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to HTML</td>
+                        <td>Monday, 9:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Styling</td>
+                        <td>Tuesday, 10:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Basics</td>
+                        <td>Wednesday, 2:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Thursday, 11:15 AM</td>
+                    </tr>
+                    <tr>
+                        <td>HTML Forms</td>
+                        <td>Friday, 3:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Contact Information</h2>

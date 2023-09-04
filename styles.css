@@ -1,23 +1,42 @@
-/* Add your CSS styles here */
-nav {
-    background-color: #333;
-    color: rgb(196, 75, 75);
-    padding: 10px;
-}
+    /* Add your CSS styles here */
+    ul.nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    ul.nav-menu li {
+        display: inline-block;
+        position: relative;
+    }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+    ul.nav-menu li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(33, 43, 131);
+    }
 
-nav a {
-    color: rgb(37, 72, 187);
-    text-decoration: none;
-    font-weight: bold;
-}
+    ul.nav-menu li:hover ul.dropdown {
+        display: block;
+    }
+
+    ul.dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(110, 131, 226);
+        border: 1px solid rgb(116, 152, 207);
+    }
+
+    ul.dropdown li {
+        display: block;
+    }
+
+    ul.dropdown li a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
