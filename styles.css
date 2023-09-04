@@ -1,0 +1,23 @@
+/* Add your CSS styles here */
+nav {
+    background-color: #333;
+    color: rgb(196, 75, 75);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(37, 72, 187);
+    text-decoration: none;
+    font-weight: bold;
+}
